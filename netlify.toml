@@ -1,0 +1,17 @@
+[build]
+  # Perintah build (tidak ada karena ini situs statis murni)
+  command = ""
+  # Folder yang berisi file statis
+  publish = "public"
+
+# Konfigurasi untuk Netlify Functions
+[functions]
+  # Folder tempat kode functions berada
+  directory = "netlify/functions"
+
+# Aturan redirect untuk SPA (Single Page Application) jika diperlukan
+# Ini memastikan semua rute diarahkan ke index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
